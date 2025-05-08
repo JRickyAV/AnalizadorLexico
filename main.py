@@ -46,7 +46,7 @@ def ejecutarLex(casoPrueba):
     tokens = lexer(codigo, token_specs)
     guardar_json(tokens, './outputs/tokensResults'+casoPrueba+'.json')
 
-    print("Tokens generados y guardados en 'tokens.json'")
+    print("Tokens generados y guardados en 'tokens"+casoPrueba+".json'")
 
 
 if __name__ == '__main__':
@@ -55,9 +55,3 @@ if __name__ == '__main__':
     ejecutarLex('3')
     ejecutarLex('4')
     ejecutarLex('5')
-    # token_specs = cargar_tokens('tokensList.json')
-    # codigo = leer_archivo('codigo.minic')
-    # tokens = lexer(codigo, token_specs)
-    # guardar_json(tokens, 'tokensResults.json')
-
-    # print("Tokens generados y guardados en 'tokens.json'")
