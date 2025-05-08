@@ -40,13 +40,24 @@ def lexer(input_code, token_specs):
             position += 1
     return tokens
 
+def ejecutarLex(casoPrueba):
+    token_specs = cargar_tokens('tokensList.json')
+    codigo = leer_archivo('./inputs/codigo'+casoPrueba+'.minic')
+    tokens = lexer(codigo, token_specs)
+    guardar_json(tokens, './outputs/tokensResults'+casoPrueba+'.json')
+
+    print("Tokens generados y guardados en 'tokens.json'")
 
 
 if __name__ == '__main__':
-    token_specs = cargar_tokens('tokensList.json')
-    codigo = leer_archivo('codigo.minic')
-    tokens = lexer(codigo, token_specs)
-    guardar_json(tokens, 'tokensResults.json')
-    for token in tokens:
-        print(token)
-    print("Tokens generados y guardados en 'tokens.json'")
+    ejecutarLex('1')
+    ejecutarLex('2')
+    ejecutarLex('3')
+    ejecutarLex('4')
+    ejecutarLex('5')
+    # token_specs = cargar_tokens('tokensList.json')
+    # codigo = leer_archivo('codigo.minic')
+    # tokens = lexer(codigo, token_specs)
+    # guardar_json(tokens, 'tokensResults.json')
+
+    # print("Tokens generados y guardados en 'tokens.json'")
