@@ -2,10 +2,10 @@
 
 Un analizador léxico es la primera etapa de un compilador, lee el código fuente y lo convierte en una secuencia de tokens.
 
-Un token es una unidad de lenguaje, en este ejemplo de Mini C:
-`int` -> tipo `KEYWORD`
-`x` -> tipo `IDENTIFIER`
-`=` -> tipo `ASSIGN`
+Un token es una unidad de lenguaje, en este ejemplo de Mini C: <br>
+`int` -> tipo `KEYWORD` <br>
+`x` -> tipo `IDENTIFIER` <br>
+`=` -> tipo `ASSIGN` <br>
 
 Este código esta ejecutado en python 3.11.2 y ejecutando `python3 main.py`
 
