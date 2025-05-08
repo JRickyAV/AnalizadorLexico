@@ -7,7 +7,13 @@ Un token es una unidad de lenguaje, en este ejemplo de Mini C: <br>
 `x` -> tipo `IDENTIFIER` <br>
 `=` -> tipo `ASSIGN` <br>
 
-Este código esta ejecutado en python 3.11.2 y ejecutando `python3 main.py`
+## Para correr este código
+
+Clonar el repositorio <br>
+https://github.com/JRickyAV/AnalizadorLexico
+
+
+Este código esta ejecutado en python 3.11.2 y ejecutando `python3 main.py` dentro de la carpeta de repositorio ejecutara correctamente el programa.
 
 Los casos de prueba estan almacenados en la carpeta inputs los cuales contienen ejemplos de códigos similares a C, los resultados estarán almacenados en la carpeta outputs en formato de JSON.
 
